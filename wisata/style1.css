@@ -1,0 +1,19 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(23, 84, 118, 0.361);
+}
+
+h1 {
+    margin-left: 10px;
+}
+
+.bandarudara{
+    color:rgb(23, 84, 118);
+}
