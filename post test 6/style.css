@@ -1,0 +1,26 @@
+body{
+    background-color: pink;
+}
+
+h1{
+    text-align: center;
+}
+
+.tabel1{
+    margin-left: 30%;
+    margin-top: 10%;
+}
+
+.tabel2{
+    margin-left: 40%;
+    margin-top: 10%;
+}
+
+table{
+    border-radius: 10px;
+}
+
+td{
+    background-color: aqua;
+    border-radius: 10px;
+}
