@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Nilai Mata Kuliah</title>
+</head>
+<body>
+    <h2>Form Penilaian Mahasiswa</h2>
+        <form action="hitung.php" method="post">
+            <label for="nilai_mk1">Nilai Matakuliah 1:</label>
+            <input type="text" name="nilai_mk1" required><br>
+
+            <div id="kolom_input"></div>
+
+            <button type="button" id="tambah_input">Tambah Mata Kuliah</button>
+            <input type="submit" value="hitung nilai">
+        </form>
+    
+    <script>
+        var counter = 2;
+        document.getElementById('tambah_input').addEventListener('click',function(){
+            var newLabel = document.createElement('label');
+            newLabel.setAttribute('for', 'nilai_mk' + counter);
+            newLabel.textContent = 'Nilai Matakuliah ' + (counter) + ': ';
+
+            var newInput = document.createElement('input');
+            newInput.type = 'text';
+            newInput.name = 'nilai_mk' + counter++;
+            newInput.placeholder = 'Nilai Matkul ' + (counter - 1);
+
+            document.getElementById('kolom_input').appendChild(newLabel);
+            document.getElementById('kolom_input').appendChild(newInput);
+            document.getElementById('kolom_input').appendChild(document.createElement
+            ('br'));
+        });
+    </script>
+</body>
+</html>
