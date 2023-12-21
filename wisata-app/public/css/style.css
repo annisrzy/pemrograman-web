@@ -1,0 +1,165 @@
+body {
+    margin: 10px;
+    padding: 0;
+    background-color: #e1c78f;
+    color: #30261a;
+    font-family: 'Poppins', sans-serif;
+}
+
+.kontainer {
+    display: grid;
+    grid-template-areas:
+    "header header"
+    "nav nav"
+    "main main"
+    "footer footer";
+    grid-template-columns: 0.5fr 0.5fr;
+    grid-template-rows: 0.3fr 1fr 1fr 0.1fr;
+    box-sizing: border-box;
+    gap: 20px;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    background-color: #b0926a;
+    margin-left: 5px;
+    grid-area: header;
+    justify-content: space-between;
+    border-radius: 30px;
+}
+
+.plan{
+    color: #5e3f19;
+}
+
+a{
+    font-size: 20px;
+    text-decoration: none;
+    color: #30261a;
+    margin-left: 10px;
+    margin-right: 30px;
+}
+
+header ul{
+    display: flex;
+    list-style: none;
+}
+
+header h1{
+    margin: 10px;
+    margin-left: 15px;
+}
+
+nav{
+    display: grid;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    grid-area: nav;
+    justify-content: center;
+    border-radius: 30px;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.image-grid img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.image-grid a:hover{
+    box-shadow: 0 5px 20px 0 #ffd78c;
+}
+
+.image-grid p{
+    text-align: center;
+    font-size: 20px;
+}
+
+
+main{
+    display: flex;
+    align-items: center;
+    background-color: #b0926a;
+    padding: 20px;
+    grid-area: main;
+    justify-content: space-between;
+    border-radius: 30px;
+    color: #30261a;
+    margin: 15px;
+}
+
+.saran{
+    align-items: center;
+    align-content: center;
+    display: flex;
+    padding: 20px;
+    grid-area: footer;
+    justify-content: left;
+    border-radius: 30px;
+}
+
+footer{
+    font-size: larger;
+    color: #000;
+    grid-area: footer;
+    background-color: #b0926a;
+    text-align: center;
+    padding: 20px;
+    border-radius: 30px;
+}
+
+
+.saran{
+    width: 100%;
+    position: relative;
+    margin-bottom: 15px;
+}
+.saran i{
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #bbb;
+}
+.saran textarea{
+    width: 65%;
+    padding: 20px 60px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    background-color: #eee;
+    border-radius: 40px;
+}
+.saran textarea::placeholder{
+    color: #bbb;
+    font-weight: 500;
+}
+
+.button{
+    width: 100%;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+.button button{
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    color: #fff;
+    background-color: #000;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+}
